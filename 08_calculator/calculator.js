@@ -8,15 +8,12 @@ const subtract = function(num1,num2) {
 };
 
 const sum = function(arr) {
-  let total = 0;
-	arr.forEach(item => total += item);
-  return total;
+	return arr.reduce((total,num)=> total + num,0);
+  
 };
 
 const multiply = function(arr) {
-  let total = 1;
-  arr.forEach(item => total *= item );
-  return total;
+  return arr.reduce((total,num) => total * num,1);
 };
 
 const power = function(num1,num2) {
